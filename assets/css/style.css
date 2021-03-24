@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+a,a:hover{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+img{
+	vertical-align: middle;
+}
+ul,ol,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+/*Common CSS END*/
+/*Hero Menu  CSS Strat*/
+.hero-menu{
+	padding: 25px 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+nav .logo{}
+nav .logo .navbar-brand{
+	color: #fff;
+}
+nav .menu{}
+.menu-list{
+	display: flex;
+}
+.menu-list li{
+	margin-left: 15px;
+}
+.menu-list li a{
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	padding: 10px;
+}
+.menu-list li a.active,
+.menu-list li a:hover{
+	color: #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+}
+/*Menubar Icon CSS*/
+.menubar{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	display: none;
+}
+.menubar .fa-bars,
+.menubar .fa-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #f1f1f1;
+	font-size: 22px;
+}
+.menubar .fa-close{
+	display: none;
+}
+/*Social Link*/
+.social-link {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translate(0%, -50%);
+}
+.social-link a{
+	width: 40px;
+	height: 40px;
+	border-radius: 0px;
+}
+/*Hero Menu  CSS END*/
+
+/*Banner Area  CSS Strat*/
+.hero_slider{}
+.carousel-inner{
+	height: 100vh;
+}
+.carousel-item{
+	height: 100%;
+}
+.carousel-item img {
+    height: 100%;
+}
+/*Banner Area  CSS END*/
+/*Porfolio CSS Strat*/
+.tz-gallery,
+section{
+	padding: 100px 0px;
+}
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+/*Porfolio CSS End*/
+
+/*Shop Area CSS Strat*/
+.shop{}
+.shop .item{
+	position: relative;
+	padding: 10px !important;
+}
+.shop .item:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+.shop .content{
+	padding: 0px 20px;
+}
+.shop .content span{
+	font-size: 12px;
+    font-weight: 500;
+    color: #111111;
+    padding: 10px 0px;
+}
+.shop .content h4{
+	font-size: 20px;
+    padding-bottom: 15px;
+}
+/*Shop Area CSS End*/
+
+/*Responsive Area CSS*/
+@media (max-width: 668px){
+	.menubar{
+		display: block;
+	}
+	.menu{
+		display: none;
+	}
+	.menu-list{
+		flex-direction: column;
+		position: fixed;
+		width: 50%;
+		height: 100vh;
+		right: 0;
+		top: 0;
+		background: rgba(0,0,0,0.6);
+		text-align: center;
+		padding-top: 80px;
+	}
+	.menu-list li{
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.menu-list li a{
+		color: #fff;
+	}
+	.menu-list li a:hover{
+		color: #d9d9d9;
+	}
+	.con-item{
+		flex-wrap: wrap-reverse;
+	}
+	.ab-img{
+		padding: 20px 0px 50px 0px;
+	}
+}
